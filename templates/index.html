@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Netflix Content Type Prediction</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Netflix Content Type Prediction</h1>
+
+        <form method="POST" action="/predict">
+
+            <label for="director">Director</label>
+            <input
+                type="text"
+                id="director"
+                name="director"
+                placeholder="Enter director"
+            >
+
+            <label for="country">Country</label>
+            <input
+                type="text"
+                id="country"
+                name="country"
+                placeholder="Enter country"
+            >
+
+            <label for="rating">Rating</label>
+            <input
+                type="text"
+                id="rating"
+                name="rating"
+                placeholder="Enter rating"
+                required
+            >
+
+            <label for="listed_in">Genres</label>
+            <input
+                type="text"
+                id="listed_in"
+                name="listed_in"
+                placeholder="Example: Dramas, Comedies"
+                required
+            >
+
+            <button type="submit">
+                Predict Content Type
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

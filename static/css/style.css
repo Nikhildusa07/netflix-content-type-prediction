@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #141414;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 35px;
+}
+
+form {
+    background: #222;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 15px 0 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.result-card {
+    background: #222;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.prediction {
+    font-size: 32px;
+    font-weight: bold;
+}
